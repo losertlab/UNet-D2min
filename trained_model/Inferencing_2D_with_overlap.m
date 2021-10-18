@@ -1,10 +1,10 @@
 
 
 %% Set Paths
-read_imDir = '/Users/cathygu/Documents/Unet_D2min_Github_package/example/sample_image/'; % path to the raw images to segment
+read_imDir = 'example/sample_image/'; % path to the raw images to segment
 read_img_common_name = 'sample'; %common name of the images
 read_file_ext = '.tif';
-save_pxDir = '/Users/cathygu/Documents/Unet_D2min_Github_package/example/segmented/'; % path to save the segmented masks
+save_pxDir = 'example/segmented/'; % path to save the segmented masks
 add_read_image_to_output_name = 1; % Set this variable to 0 if output images are to have only common_name_indx.tif, if set to 1 then output image name will be read_image_name_common_name_indx.tif
 save_img_common_name = 'inferenced'; % if not empty, the program automatically adds an _ between common name and image id 
 zero_pad = 4; % zero padding added to the image name
@@ -12,7 +12,7 @@ output_class = 'uint8';
 save_file_ext = '.tif';
 
 %% Load Model
-load("/Users/cathygu/Documents/Unet_D2min_Github_package/trained_model/UNet_single_cell_seg_norm_256_weights_1_3_Workspace.mat",'Unet_seg') % path to the saved model and its name
+load("trained_model/UNet_single_cell_seg_norm_256_weights_1_3_Workspace.mat",'Unet_seg') % path to the saved model and its name
 tile_size = Unet_seg.Layers(1,1).InputSize; % Get the input size image used during training the network
 neighbor_size = 128; % pixels to add to the tiled image from surrounding neighboring neighbors before inferencing
 normalization_choice = 'zscore'; % 'zerocenter', 'zscore', 'none'
