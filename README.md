@@ -9,7 +9,7 @@ This tool was developed and modified to measure and analysis the collective migr
 3. Analyze nucleus motion compared to their close neighbors (their neighbors are founding using and calculate how willing they are to follow their neighbors’ motion (D2min). 
 
 ## Dependencies and Installation
-All scripted were tested in MATLAB 2020a with the Image Processing Toolbox and Deep Learning Toolbox.
+All scripted were tested in MATLAB 2020a with the Image Processing Toolbox, Deep Learning Toolbox, and Computer Vision Toolbox.
 
 ## Workflow
 
