@@ -14,7 +14,7 @@ All scripted were tested in MATLAB 2020a with the Image Processing Toolbox, Deep
 ## Workflow
 
 ### `/trained_model/Inferencing_2D_with_overlap.m`
-The `trained_model` folder contains the trained network in MATLAB ((`UNet_single_cell_seg_norm_256_weights_1_3_Workspace.mat`) to segment the nucleus of single stem cells in phase contrast, as well as the scripts in MATLAB to run the inferencing code (`Inferencing_2D_with_overlap.m`). This is the raw output from the neural network, one still need to launch some morphological cleaning on the output and some object separation methods (like FogBank or Watershed in Fiji) to get the final result.
+The `trained_model` folder contains the trained network in MATLAB ((`UNet_single_cell_seg_norm_256_weights_1_3_Workspace.mat`) to segment the nucleus of single stem cells in phase contrast, as well as the scripts in MATLAB to run the inferencing code (`Inferencing_2D_with_overlap.m`). This is the raw output from the neural network, one still need to launch some morphological cleaning on the output and some object separation methods (like FogBank or Watershed in Fiji) to get the final result. Here we included the Fiji macro `Watershed_macro.ijm` that has been used to segment objects.
 
 This code should work without GPU support, but it will be much faster if you have a GPU on your machine (strongly recommend).
 
