@@ -1,6 +1,6 @@
-dir1 = getDirectory();
+dir1 = getDirectory("");
 format = "TIFF";
-dir2 = getDirectory();
+dir2 = getDirectory("");
 list = getFileList(dir1);
 setBatchMode(true);
 for  (i=0; i<list.length; i++) {
