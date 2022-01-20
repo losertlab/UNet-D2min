@@ -9,7 +9,9 @@ This tool was developed and modified to measure and analysis the collective migr
 3. Analyze nucleus motion compared to their close neighbors (their neighbors are founding using and calculate how willing they are to follow their neighbors’ motion (D2min). 
 
 The current version of the code was adapted for analysis of the data in:
+
 Shuyao Gu, Rachel M. Lee, Zackery Benson, Chenyi Ling, Michele I. Vitolo, Stuart S. Martin, Joe Chalfoun, Wolfgang Losert, "Label-free Cell Tracking Enables Collective Motion Phenotyping in Epithelial Monolayers"
+
 https://doi.org/10.1101/2021.12.14.472148
 
 ## Dependencies and Installation
